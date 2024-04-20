@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "app_users",
+  "info": {
+    "singularName": "app-user",
+    "pluralName": "app-users",
+    "displayName": "appUser"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userName": {
+      "type": "string"
+    },
+    "userEmail": {
+      "type": "email"
+    },
+    "userPassword": {
+      "type": "string"
+    },
+    "registrationDate": {
+      "type": "date"
+    },
+    "lastLoginDate": {
+      "type": "datetime"
+    },
+    "status": {
+      "type": "string"
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
