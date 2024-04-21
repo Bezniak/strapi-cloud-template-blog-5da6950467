@@ -32,11 +32,8 @@
       "default": false
     },
     "userEmail": {
-      "type": "string"
-    },
-    "uniqueIdEmail": {
-      "type": "uid",
-      "targetField": "userEmail"
+      "type": "email",
+      "unique": true
     }
   }
 }
