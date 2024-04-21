@@ -827,18 +827,20 @@ export interface ApiAppUserAppUser extends Schema.CollectionType {
     singularName: 'app-user';
     pluralName: 'app-users';
     displayName: 'appUser';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     userName: Attribute.String;
-    userEmail: Attribute.Email;
     userPassword: Attribute.String;
     registrationDate: Attribute.Date;
     lastLoginDate: Attribute.DateTime;
     status: Attribute.String;
     blocked: Attribute.Boolean & Attribute.DefaultTo<false>;
+    userEmail: Attribute.String;
+    uniqueIdEmail: Attribute.UID<'api::app-user.app-user', 'userEmail'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

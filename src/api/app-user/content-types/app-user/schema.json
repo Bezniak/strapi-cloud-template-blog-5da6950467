@@ -4,7 +4,8 @@
   "info": {
     "singularName": "app-user",
     "pluralName": "app-users",
-    "displayName": "appUser"
+    "displayName": "appUser",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,9 +14,6 @@
   "attributes": {
     "userName": {
       "type": "string"
-    },
-    "userEmail": {
-      "type": "email"
     },
     "userPassword": {
       "type": "string"
@@ -32,6 +30,13 @@
     "blocked": {
       "type": "boolean",
       "default": false
+    },
+    "userEmail": {
+      "type": "string"
+    },
+    "uniqueIdEmail": {
+      "type": "uid",
+      "targetField": "userEmail"
     }
   }
 }
