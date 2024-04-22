@@ -32,8 +32,15 @@
       "default": false
     },
     "userEmail": {
-      "type": "email",
+      "type": "string",
       "unique": true
     }
-  }
+  },
+  "indexes": [
+    {
+      "name": "app_user_user_email_idx",
+      "columns": ["user_email"],
+      "type": "unique"
+    }
+  ]
 }
